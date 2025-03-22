@@ -55,6 +55,21 @@ document.querySelectorAll('.section').forEach((section) => {
     observer.observe(section);
 });
 
+// Mobile Navigation
+const navToggle = document.querySelector('.nav-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+navToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+
+// Close mobile menu when clicking a link
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+    });
+});
+
 // Handle hire form submission
 document.getElementById('hireForm').addEventListener('submit', function(e) {
     e.preventDefault();
