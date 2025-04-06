@@ -14,9 +14,7 @@ const texts = [
     "Computer Science Professional",
     "Junior Cybersecurity Analyst",
     "Junior Software Engineer",
-    "Fullstack Developer",
-    "Data Analyst",
-    "Software Tester"
+    "Fullstack Developer"
 ];
 let currentIndex = 0;
 
